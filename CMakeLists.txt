@@ -24,7 +24,7 @@ find_package(Boost COMPONENTS system REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
 # find python
-find_package(Python 3.9...<3.10 COMPONENTS Interpreter Development)
+find_package(Python 3.9...<3.11 COMPONENTS Interpreter Development)
 
 if (PYTHON_FOUND)
     message(STATUS "Found Python interpreter: ${PYTHON_VERSION}")
